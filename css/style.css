@@ -991,9 +991,15 @@ h6,
 .testimonial-carousel .owl-item.center .testimonial-text {
     transform: scale(1);
 }
-
 /*** Testimonial ***/
-
+.testimonial-carousel .owl-item .testimonial-text {
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(.8);
+    transition: .5s;
+    height: 336px;
+    border-radius: 10px;
+}
 
 @media screen and (max-width: 767px) {
     .home-banner-bg {
@@ -1074,6 +1080,9 @@ h6,
     }
     .contact-page-v-office{
         margin-bottom: 78px;
+    }
+    .testimonial-carousel .owl-item .testimonial-text {
+        height: 100% !important;
     }
 }
 
