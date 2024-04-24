@@ -1089,6 +1089,9 @@ h6,
     .testimonial-carousel .owl-item .testimonial-text {
         height: 100% !important;
     }
+    .navbar-dark .navbar-toggler {
+        margin-left: 86% !important;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
