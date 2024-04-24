@@ -860,7 +860,7 @@ h6,
     margin-top: 80px;
 }
 .home-banner-card1{
-    width: 20%;
+    width: 26%;
     height: 100%;
     background-image: url('/img/Dr.\ Hari\ Prasad_Photo.png');
     background-size: cover;
@@ -885,9 +885,79 @@ h6,
 .sm-pt{
     padding: 20px 0px !important;
 }
-/* .top-about-banners{
-    margin-top: 40px;
-} */
+
+.about-page-btns{
+    width: 33.3334%;
+}
+.about-page-board-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.about-page-board-positon {
+    background-color: #ffffff; /* Background color for each board position */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+    flex: 1 0 100%; /* Initially, items take full width */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
+    border-left: 4px solid rgb(6, 163, 218) ; /* Add normal left border */
+}
+
+.board-positon-text {
+    margin: 0;
+    color: #2b3857;
+    
+    font-size: 17px;
+}
+
+@media (min-width: 768px) {
+    .about-page-board-positon {
+        flex: 1 0 calc(50% - 20px); /* On medium and larger devices, items take 50% width with gap */
+    }
+}
+
+@media (min-width: 992px) {
+    .about-page-board-positon {
+        flex: 1 0 calc(50% - 20px); /* On large devices, items still take 50% width with gap */
+    }
+}
+
+.about-page-board-positon:hover {
+    transform: translateY(-5px); /* Apply a slight upward translation on hover */
+}
+
+/* Additional hover effect for text */
+.about-page-board-positon:hover .board-positon-text {
+    color: rgb(239, 35, 60); /* Change text color on hover */
+}
+.about-page-board-positon:hover {
+    transform: translateY(-5px); /* Apply a slight upward translation on hover */
+    border-left-color: rgb(239, 35, 60); /* Change left border color on hover */
+}
+
+/* testmonules */
+.home-testmonules-para{
+    padding: 15px;
+    text-align: justify;
+}
+.testmonules-images{
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+}
+.administrator-main-card{
+    margin-top: 20px;
+}
+.contact-page-v-office{
+    width: 60px;
+    height: 60px;
+    padding: 28px;
+    margin-bottom: 33px;
+}
+
+
 
 @media screen and (max-width: 767px) {
     .home-banner-bg {
@@ -912,7 +982,7 @@ h6,
         color: #ffffff;
     }
     .navbar-expand-lg{
-        padding: 10px !important;
+        padding: 19px !important;
     }
     .bg-header {
         margin-top: -4px;
@@ -927,6 +997,47 @@ h6,
     }
     .footer-cards-p{
         padding-top: 20px;
+    }
+    .administrator-order-image{
+        order: 1;
+    }
+    .administrator-order-content{
+        order: 2;
+    }
+    .testmonules-images{
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+    }
+    .testimonial-titles{
+        font-size: 18px !important;
+    }
+    .testimonial-para{
+        font-size: 12px !important;
+    }
+    .testimonial-card1{
+        padding: 10px 10px !important;
+    }
+    .about-education-btns{
+        height: 100%;
+        font-size: 15px !important;
+        padding: 0px;
+    }
+    .experience .timeline .timeline-text {
+        padding: 15px 12px;
+    }
+    .experience .timeline .timeline-text h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    .administrator-title1{
+        margin-top: 15px;
+    }
+    .administrator-main-card{
+        margin-top: 10px;
+    }
+    .contact-page-v-office{
+        margin-bottom: 78px;
     }
 }
 
@@ -953,5 +1064,11 @@ h6,
     }
     .footer-cards-p{
         padding-top: 20px;
+    }
+    .administrator-order-image{
+        order: 1;
+    }
+    .administrator-order-content{
+        order: 2;
     }
 }
