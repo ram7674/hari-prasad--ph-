@@ -1000,6 +1000,10 @@ h6,
     height: 336px;
     border-radius: 10px;
 }
+.contact-page-v-office{
+    padding: 30px;
+    margin-bottom: 39px;
+}
 
 @media screen and (max-width: 767px) {
     .home-banner-bg {
@@ -1080,6 +1084,7 @@ h6,
     }
     .contact-page-v-office{
         margin-bottom: 78px;
+        padding: 26px !important;
     }
     .testimonial-carousel .owl-item .testimonial-text {
         height: 100% !important;
