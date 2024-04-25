@@ -1022,6 +1022,9 @@ h6,
     font-size: 20px;
 }
 
+.article-br{
+    border-radius: 10px;
+}
 
 
 @media screen and (max-width: 767px) {
