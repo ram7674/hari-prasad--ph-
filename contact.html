@@ -74,7 +74,7 @@
                     <a href="Clinician.html" class="nav-item nav-link">Clinician</a>
                     <a href="Administrator.html" class="nav-item nav-link">Administrator</a>
                     <a href="Entrepreneur.html" class="nav-item nav-link">Entrepreneur</a>
-                    <a href="Links.html" class="nav-item nav-link">Links</a>
+                    <a href="offering.html" class="nav-item nav-link">Offering</a>
                     <a href="contact.html" class="nav-item nav-link active">Contact</a>
                 </div>
             </div>
@@ -146,19 +146,22 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <!-- access key add -->
+                        <input type="hidden" name="access_key" value="78af43e8-eb13-431c-8129-0a04394a5bed">
+                        <!-- access key add -->
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" name="name" placeholder="Your Name" style="height: 55px;" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" class="form-control border-0 bg-light px-4" name="email" placeholder="Your Email" style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" name="subject" placeholder="Subject" style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
+                                <textarea class="form-control border-0 bg-light px-4 py-3" name="message" rows="4" placeholder="Message" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
@@ -176,27 +179,6 @@
         </div>
     </div>
     <!-- Contact End -->
-
-
-    <!-- Vendor Start -->
-    <!-- <div class="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-3">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="img/Logo_Elevate1.png" alt="slider-logos" />
-                    <img src="img/Logo_Gyan2.png" alt="slider-logos" />
-                    <img src="img/Logo_HES3.png" alt="slider-logos" />
-                    <img src="img/Logo_Impact4.png" alt="slider-logos" />
-                    <img src="img/Logo_Kovelamudi5.png" alt="slider-logos" />
-                    <img src="img/Logo_Mento6.png" alt="slider-logos" />
-                    <img src="img/Logo_Prasad Solutions7.png" alt="slider-logos" />
-                    <img src="img/Logo_Socialite8.png" alt="slider-logos" />
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Vendor End -->
-    
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -303,6 +285,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
