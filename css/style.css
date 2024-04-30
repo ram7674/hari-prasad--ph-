@@ -824,7 +824,7 @@ h6,
 .home-banner-card1{
     width: 26%;
     height: 100%;
-    background-image: url('/img/Dr.\ Hari\ Prasad_Photo.png');
+    background-image: url("/img/Dr.\ Hari\ Prasad_Photo.png");
     background-size: cover;
     background-position: center;
 }
@@ -924,12 +924,19 @@ h6,
     z-index: 1;
 }
 
+.testimonial-carousel-shadow::before{
+    background: none;
+}
+.testimonial-carousel-shadow::after{
+    background: none;
+}
 @media (min-width: 768px) {
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
     }
 }
+
 
 @media (min-width: 992px) {
     .testimonial-carousel::before,
@@ -991,6 +998,8 @@ h6,
 .testimonial-carousel .owl-item.center .testimonial-text {
     transform: scale(1);
 }
+
+
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-text {
     margin-bottom: 30px;
@@ -1025,6 +1034,104 @@ h6,
 .article-br{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.test-ow-car .testimonial-carousel .owl-dot.active{
+    display: none;
+}
+
+
+/*** article blog ***/
+.testimonial-carousel .owl-item .testimonial-item-blog,
+.testimonial-carousel .owl-item.center .testimonial-item-blog * {
+    transition: .5s;
+}
+
+/* .testimonial-carousel .owl-item.center .testimonial-item-blog {
+    background: var(--primary) !important;
+} */
+
+.testimonial-carousel .owl-item.center .testimonial-item-blog * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 5px solid var(--primary);
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--dark);
+    border-color: var(--primary);
+}
+.testimonial-carousel .owl-item.center .testimonial-item-blog * {
+    color: #000000 !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item-blog a * {
+    color: #49a1d5 !important;
+}
+
+.testimonial-item-blog{
+    margin: 0px 20px 15px !important;
+}
+.blog-item{
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial-carousel-block .owl-dot{
+    display: none;
+}
+/*** article blog ***/
+
+
+
+/* offering page btns */
+.offering-images{
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.flipkart-btn {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.flipkart-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.flipkart-btn:hover::before {
+    opacity: 1;
+}
+.flipkart-btn:hover {
+    transform: translateY(-5px);
+}
+
+.offering-btn-container{
+    display: flex;
 }
 
 
@@ -1115,6 +1222,21 @@ h6,
     .navbar-dark .navbar-toggler {
         margin-left: 86% !important;
     }
+    .offering-images{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .offering-btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offering-btn-container{
+        flex-direction: column;
+    }
+    .offering-buttons{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1166,4 +1288,24 @@ h6,
     .navbar-dark {
         top: -8px;
     }
+    .offering-img-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offering-images{
+        width: 60%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .offering-btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+
+
+
