@@ -1266,6 +1266,12 @@ h6,
     .offering-logos-main-card{
         margin-top: 0px !important;
     }
+    .critical-care-image{
+        order: 1 !important;
+    }
+    .critical-care-text{
+        order: 2 !important;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
