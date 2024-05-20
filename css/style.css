@@ -1146,7 +1146,9 @@ h6,
 #large-block{
     display: none;
 }
-
+.governance-heilight-texgt{
+    font-weight: 600;
+}
 
 @media screen and (max-width: 767px) {
     .home-banner-bg {
