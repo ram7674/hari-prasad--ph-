@@ -1150,6 +1150,39 @@ h6,
     font-weight: 600;
 }
 
+
+
+/* inner elevate sections start */
+/* .elevate-pge-text{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+}
+.elevate-main-points{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.elevate-cards{
+    border: 2px solid #06A3DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 150px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.elevate-cards i{
+    font-size: 30px;
+} */
+/* inner elevate sections end */
+
+
+
+
 @media screen and (max-width: 767px) {
     .home-banner-bg {
         flex-direction: column;
