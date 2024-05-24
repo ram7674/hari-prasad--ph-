@@ -484,7 +484,12 @@
   height: 149px;
 }
 
-
+.clinic-image-1{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
 
 
 
